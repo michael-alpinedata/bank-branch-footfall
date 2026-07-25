@@ -12,7 +12,7 @@ RUN pip install -r requirements-api.txt --cache-dir=/root/.cache/pip
 COPY api/ /app/api/
 
 # date_randomseed sub module
-COPY date_randomseed/ /app/date_randomseed/
+COPY src/bank_footfall/date_randomseed/ /app/date_randomseed/
 
 # for the agencies names and counters database
 COPY data/data_base/ /app/data/data_base/
