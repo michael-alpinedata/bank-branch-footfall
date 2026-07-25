@@ -97,9 +97,10 @@ jobs:
           type=raw,value=latest
 
     - name: Build and push Docker image
-      uses: docker/build-push-action@v5
+      uses: docker/build-push-action@v6
       with:
         context: .
+        file: ./Dockerfile.api  # <-- Spécifie explicitement le fichier Dockerfile ici
         platforms: linux/amd64,linux/arm64
         push: true
         tags: ${{ steps.meta.outputs.tags }}
