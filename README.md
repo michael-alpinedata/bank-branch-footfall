@@ -120,11 +120,9 @@ Commands below assume a Bash shell (`bash`, `zsh`) and Python managed via `uv`.
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/MichaelG-create/bank-branch-footfall.git
+git clone https://github.com/michael-alpinedata/bank-branch-footfall.git
 cd bank-branch-footfall
 ```
-
-Replace the URL with your actual Git remote if different.
 
 ### 2. Install uv and project dependencies
 
